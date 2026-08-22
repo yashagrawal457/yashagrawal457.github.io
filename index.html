@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yash Agrawal</title>
+<meta name="description" content="Yash Agrawal, full-stack engineer working on banking infrastructure and building GenAI projects on the side.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">YA</a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <header class="hero reveal" id="top">
+    <div class="hero-row">
+      <img class="avatar" src="assets/img/avatar.jpg" alt="Yash Agrawal">
+      <div>
+        <h1 class="name">Yash Agrawal</h1>
+        <p class="location">Mumbai, India</p>
+      </div>
+    </div>
+    <p class="hero-lede">
+      I'm a software engineer who likes building things that have to <strong>actually work</strong>,
+      whether that's banking infrastructure running thousands of ATMs, or a weekend project that
+      answers questions from a PDF. Currently at KAL ATM Software, previously IIT Kharagpur.
+    </p>
+    <div class="cta-row">
+      <a class="btn primary" href="mailto:yashagrawal457@gmail.com">Say hello</a>
+      <a class="btn" href="https://github.com/yashagrawal457" target="_blank" rel="noopener">See my code</a>
+      <a class="btn" href="https://linkedin.com/in/yashagrawal457" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <p class="eyebrow">About</p>
+    <h2 class="section-title">A bit about me</h2>
+    <p class="lede-p">
+      I studied Math and Computing at IIT Kharagpur, which is a roundabout way of saying I like problems
+      that sit somewhere between logic and code. These days that shows up at
+      <strong>KAL ATM Software</strong>, where I help build the systems behind ATM networks for four
+      banks, software that quietly needs to work correctly every single time, across thousands of
+      machines and tens of thousands of transactions a day. Before that, I spent a summer at
+      <strong>BNY Mellon</strong> building a pipeline that generated realistic synthetic financial
+      documents for training data. Outside of work, it's a mix of screens and not-screens: I'm
+      often deep in some GenAI side-project, but you'll just as likely find me on a cricket field,
+      doing laps in a pool, or a few episodes into a show.
+    </p>
+  </section>
+
+  <section id="work">
+    <p class="eyebrow">Work</p>
+    <h2 class="section-title">Where I've worked</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title">Software Engineer, KAL ATM Software</p>
+        <p class="entry-dates">May 2024 – Present</p>
+      </div>
+      <p class="entry-org">Global multi-vendor ATM &amp; self-service banking software</p>
+      <p class="body">
+        I work across both of KAL's core products, the ATM-facing operator app and the CRM that
+        aggregates transaction data, mostly in C#/.NET Core and React/TypeScript. A good chunk of my
+        time goes into making things faster and less painful to use: I re-indexed some of our busiest
+        transaction tables and cut average query latency by about 30%, and reworked a few multi-step
+        workflows that operators were fighting with every day. I also spend time on code review, testing,
+        and keeping our Azure DevOps release pipelines running smoothly.
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title">Data Science Intern, BNY Mellon</p>
+        <p class="entry-dates">Jun 2023 – Aug 2023</p>
+      </div>
+      <p class="body">
+        One summer project: building a pipeline that generated realistic synthetic financial documents,
+        so models could be trained without touching real customer data. I combined layout-preserving
+        text extraction (pdfplumber) with OCR preprocessing and the TextAttack NLP framework, then
+        validated the results across a corpus of 15,000+ real documents to make sure the synthetic ones
+        actually held up.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="eyebrow">Projects</p>
+    <h2 class="section-title">Things I've built for fun</h2>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title">AskDoc</p>
+        <a class="proj-link" href="https://github.com/yashagrawal457/AskDoc" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="body">
+        A chatbot that actually reads your PDFs. I got tired of ctrl+F-ing through long documents, so I
+        built AskDoc to combine retrieval-augmented generation with LLM function calling. It grounds its
+        answers in whatever PDF you upload, using sentence-transformer embeddings for semantic search, and
+        can reach for a calculator or a date lookup mid-conversation instead of just guessing.
+      </p>
+    </div>
+
+    <div class="entry">
+      <div class="entry-head">
+        <p class="entry-title">ChessMate</p>
+        <a class="proj-link" href="https://github.com/yashagrawal457/ChessEngine" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+      <p class="body">
+        A chess engine I built mostly to see if I could. No machine learning here, just a minimax search
+        with alpha-beta pruning, playing legal, sensible chess by searching the game tree efficiently
+        enough to think a few moves ahead without taking forever.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="eyebrow">Toolbox</p>
+    <h2 class="section-title">What I build with</h2>
+    <p class="skills-intro">
+      Day to day it's mostly C#, TypeScript, and Python. The fuller list, for the curious:
+    </p>
+
+    <div class="skill-line">
+      <p class="skill-cat">Languages</p>
+      <div class="skill-tags">
+        <span class="tag">C#</span><span class="tag">Python</span><span class="tag">C++</span>
+        <span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-line">
+      <p class="skill-cat">Frameworks &amp; libraries</p>
+      <div class="skill-tags">
+        <span class="tag">.NET Core</span><span class="tag">React.js</span><span class="tag">Node.js</span>
+        <span class="tag">REST APIs</span><span class="tag">Flask</span><span class="tag">Streamlit</span>
+        <span class="tag">sentence-transformers</span>
+      </div>
+    </div>
+    <div class="skill-line">
+      <p class="skill-cat">GenAI / LLM</p>
+      <div class="skill-tags">
+        <span class="tag">RAG</span><span class="tag">Prompt engineering</span><span class="tag">Function calling</span>
+        <span class="tag">Embeddings &amp; semantic search</span><span class="tag">Groq API</span><span class="tag">LLM orchestration</span>
+      </div>
+    </div>
+    <div class="skill-line">
+      <p class="skill-cat">Tools &amp; platforms</p>
+      <div class="skill-tags">
+        <span class="tag">Git</span><span class="tag">Docker</span><span class="tag">Azure DevOps</span>
+        <span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">OpenCV</span><span class="tag">pdfplumber</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="lede-p">
+      Building something interesting, hiring, or just want to compare notes on chess engines? My inbox
+      is open.
+    </p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:yashagrawal457@gmail.com">yashagrawal457@gmail.com</a>
+      <a class="btn" href="https://linkedin.com/in/yashagrawal457" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/yashagrawal457" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://leetcode.com/yashagrawal457" target="_blank" rel="noopener">LeetCode</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Yash Agrawal</footer>
+
+</div>
+</body>
+</html>
